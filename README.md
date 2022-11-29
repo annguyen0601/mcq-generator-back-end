@@ -1,7 +1,7 @@
 # BÁO CÁO NCKH: HỆ THỐNG ĐỀ CỬ CÂU HỎI TRẮC NGHIỆM
 
 ## Web application
-To demonstrate the algorithm, a simple Angular web application has been created. It accepts the given paragraph along with the desired number of questions and outputs each generated question with the ability to redact them (shown below). The algorithm is exposing a simple REST API using *flask* which is consumed by the web app.
+Để chứng minh thuật toán, một trang web sử dụng Angular đã được tạo. Nó nhận vào một đoạn văn với số lượng câu hỏi mong muốn và xuất ra từng câu hỏi được tạo.
 
 
 ![question generation process](https://i.ibb.co/WFJjCgH/1-edited-fullscreen.png "Web application ")
