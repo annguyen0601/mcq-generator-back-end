@@ -3,8 +3,7 @@
 ## Web application
 Để chứng minh thuật toán, một trang web sử dụng Angular đã được tạo. Nó nhận vào một đoạn văn với số lượng câu hỏi mong muốn và xuất ra từng câu hỏi được tạo.
 
-
-![question generation process](https://i.ibb.co/WFJjCgH/1-edited-fullscreen.png "Web application ")
+Tải cái web tại: (https://github.com/annguyen0601/Front-end-NCKH)
 
 ## Installation guide
 
