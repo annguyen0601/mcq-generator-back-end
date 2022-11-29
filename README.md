@@ -41,5 +41,5 @@ Download [sense2vec](https://github.com/explosion/sense2vec/releases/download/v1
 
 *Run the API:*
 
-    `python gay.py`
+    python gay.py
 
