@@ -1,9 +1,4 @@
-# BÁO CÁO NCKH: HỆ THỐNG ĐỀ CỬ CÂU HỎI TRẮC NGHIỆM
-
-## Web application
-Để chứng minh thuật toán, một trang web sử dụng Angular đã được tạo. Nó nhận vào một đoạn văn với số lượng câu hỏi mong muốn và xuất ra từng câu hỏi được tạo.
-
-Tải cái web tại: (https://github.com/annguyen0601/Front-end-NCKH)
+#Web: https://annguyen0601.github.io/NCKH-front/#/
 
 ## Installation guide
 
