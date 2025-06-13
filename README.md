@@ -1,39 +1,63 @@
-# Web: https://annguyen0601.github.io/NCKH-front/#/
+# MCQ Generator Back-End
 
-## Installation guide
+This is the backend API for the Multiple Choice Question (MCQ) generator project. It uses Python and machine learning models to generate questions, answers, and distractors from your input text. The backend powers the Angular front end and handles all the heavy lifting for quiz creation.
 
-### Creating a virtual environment *(optional)*
-To avoid any conflicts with python packages from other projects, it is a good practice to create a [virtual environment](https://docs.python.org/3/library/venv.html) in which the packages will be installed. If you do not want to this you can skip the next commands and directly install the the requirements.txt file. 
+## 🚀 Getting Started
 
-Create a virtual environment :
+**1. (Optional) Create a virtual environment:**
+This keeps your Python packages organized and avoids conflicts.
 
-    python -m venv venv
+```bash
+python -m venv venv
+```
 
-Enter the virtual environment:
+Activate it:
 
-*Windows:*
+- On Windows:
 
-    . .\venv\Scripts\activate
+```bash
+.\venv\Scripts\activate
+```
 
-*Linux or MacOS*
+- On Mac/Linux:
 
-    source .\venv\Scripts\activate
+```bash
+source venv/bin/activate
+```
 
-### STEP 1: Installing packages
 
-    pip install -r .\requirements.txt 
+**2. Install dependencies:**
 
-### STEP 2: Downloading data
+```bash
+pip install -r requirements.txt
+```
 
-#### Question-answer model
-Download the [multitask-qg-ag model](https://drive.google.com/file/d/1-vqF9olcYOT1hk4HgNSYEdRORq-OD5CF/view?usp=sharing) checkpoint and place it in the  `app/ml_models/question_generation/models/`and `app/ml_models/answer_generation/models/`directory.
+**3. Download ML model checkpoints:**
+Download the following models and place them in the correct folders:
 
-#### Distractor generation 
-Download the [race-distractors model](https://drive.google.com/file/d/1jKdcbc_cPkOnjhDoX4jMjljMkboF-5Jv/view?usp=sharing) checkpoint and place it in the  `app/ml_models/distractor_generation/models/` directory.
+- **multitask-qg-ag** (for question and answer generation):
+[Download multitask-qg-ag](https://drive.google.com/file/d/1-vqF9olcYOT1hk4HgNSYEdRORq-OD5CF/view)
+Place in:
+    - `app/ml_models/question_generation/models/`
+    - `app/ml_models/answer_generation/models/`
+- **race-distractors** (for distractor generation):
+[Download race-distractors](https://drive.google.com/file/d/1jKdcbc_cPkOnjhDoX4jMjljMkboF-5Jv/view)
+Place in:
+    - `app/ml_models/distractor_generation/models/`
+- **sense2vec** (for sense2vec distractor generation):
+[Download sense2vec](https://github.com/explosion/sense2vec/releases/download/v1.0.0/s2v_reddit_2015_md.tar.gz)
+Extract and put the `s2v_old` folder in:
+    - `app/ml_models/sense2vec_distractor_generation/models/`
 
-Download [sense2vec](https://github.com/explosion/sense2vec/releases/download/v1.0.0/s2v_reddit_2015_md.tar.gz), extract it and place the `s2v_old`  folder  and place it in the `app/ml_models/sense2vec_distractor_generation/models/` directory.
+**4. Run the API:**
 
-### STEP 3: Run the API then check the WEBSITE to use
+```bash
+python gay.py
+```
 
-    python gay.py
+Now your backend is live and ready to connect with the front end!
 
+## 🧑‍💻 Examples
+
+- If you POST a paragraph of text to the API, it will return generated MCQs with answers and distractors.
+- When the Angular front end sends a request, this backend does all the question generation and sends the results back.
