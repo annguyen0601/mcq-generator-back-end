@@ -52,7 +52,7 @@ Extract and put the `s2v_old` folder in:
 **4. Run the API:**
 
 ```bash
-python gay.py
+python app.py
 ```
 
 Now your backend is live and ready to connect with the front end!
